@@ -34,7 +34,6 @@ func (l *line) Post(str string) error {
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
 	req.Header.Add(HEADER_AUTHORIZATION, BEARER + l.token)
 
-
 	client := &http.Client{Timeout: time.Duration(5 * time.Second)}
 	resp, err := client.Do(req)
 	if err != nil {
@@ -50,3 +49,5 @@ func (l *line) Post(str string) error {
 
 	return nil
 }
+
+

@@ -1,0 +1,12 @@
+.box{
+    background-color: chartreuse;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+
+    width: 128px;
+    height: 64px;
+}
